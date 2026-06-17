@@ -111,7 +111,7 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-[#F5F1E8] px-6 lg:px-8 relative">
+    <section id="faq" className="py-24 bg-transparent px-6 lg:px-8 relative">
       <div className="max-w-3xl mx-auto bg-white/50 backdrop-blur-sm border border-white/60 p-8 sm:p-12 rounded-premium shadow-premium">
         
         {/* Header */}

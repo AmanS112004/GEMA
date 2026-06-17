@@ -77,7 +77,7 @@ export const LearningOutcomes: React.FC = () => {
   };
 
   return (
-    <section id="outcomes" className="py-24 bg-[#F5F1E8] relative overflow-hidden px-6 lg:px-8">
+    <section id="outcomes" className="py-24 bg-transparent relative overflow-hidden px-6 lg:px-8">
       {/* Background design accents */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full filter blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-primary/5 rounded-full filter blur-2xl -z-10" />

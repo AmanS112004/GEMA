@@ -50,7 +50,7 @@ export const WhyUs: React.FC = () => {
   };
 
   return (
-    <section id="why-us" className="py-24 bg-gradient-to-b from-[#EAE4D5] to-[#F5F1E8] px-6 lg:px-8">
+    <section id="why-us" className="py-24 bg-transparent px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Heading */}

@@ -4,7 +4,7 @@ const imgCache: { [url: string]: HTMLImageElement } = {};
 
 // Eager glob import of all PNG frames in the folder
 const modules = import.meta.glob(
-  './_MConverter.eu_Seamless_background_animation_ro…_202606180229/*.png',
+  './_MConverter*/*.png',
   { eager: true }
 );
 
@@ -19,6 +19,8 @@ export const frameUrls: string[] = Object.keys(modules)
     const val = modules[key] as any;
     return val.default || val;
   });
+
+console.log('FRAME_LOADER: successfully loaded', frameUrls.length, 'frames.');
 
 /**
  * Preload adjacent frames ahead of time to keep scrolling smooth and flicker-free.

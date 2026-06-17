@@ -55,7 +55,7 @@ export const WorkshopDetails: React.FC = () => {
   };
 
   return (
-    <section id="details" className="py-24 bg-gradient-to-b from-[#F5F1E8] to-[#EAE4D5] px-6 lg:px-8">
+    <section id="details" className="py-24 bg-transparent px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16">

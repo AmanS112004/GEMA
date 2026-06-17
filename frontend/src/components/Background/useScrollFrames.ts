@@ -11,7 +11,7 @@ export const useScrollFrames = () => {
   const [translateY, setTranslateY] = useState(0);
   const [scale, setScale] = useState(1);
   const [blur, setBlur] = useState(0);
-  const [useFallback, setUseFallback] = useState(false);
+  const useFallback = false;
 
   const stateRef = useRef({
     frameIndex: 0,
@@ -29,8 +29,8 @@ export const useScrollFrames = () => {
     // Detect prefers-reduced-motion
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (mediaQuery.matches) {
-      setUseFallback(true);
-      return;
+      // setUseFallback(true);
+      // return;
     }
 
     // Identify responsive device specs
@@ -141,7 +141,7 @@ export const useScrollFrames = () => {
           const avgFps = state.fpsBuffer.reduce((a, b) => a + b, 0) / state.fpsBuffer.length;
           // Trigger fallback if framerate consistently drops below 45 FPS
           if (avgFps < 45 && state.frameCount > 100) {
-            setUseFallback(true);
+            // setUseFallback(true);
           }
         }
       }

@@ -5,8 +5,9 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-transparent text-dark font-sans antialiased overflow-x-hidden;
+  html, body {
+    background-color: transparent !important;
+    @apply text-dark font-sans antialiased overflow-x-hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
