@@ -1,0 +1,11 @@
+# Netlify configuration to automate correct build and deploy settings
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+# Single Page Application (SPA) rewrite rules to support client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
