@@ -70,11 +70,10 @@ export const useScrollFrames = () => {
       const { step, maxFrame } = getDeviceSpecs();
       const intervals = Math.floor(192 / step) - 1;
       
-      // Strict No-Reverse constraint: target index must never decrease
       const calculatedFrame = Math.round(progress * intervals) * step;
       state.targetFrameIndex = Math.min(
         maxFrame,
-        Math.max(state.targetFrameIndex, calculatedFrame)
+        Math.max(0, calculatedFrame)
       );
 
       // Section Transitions (Parallax & Opacity)
@@ -147,12 +146,17 @@ export const useScrollFrames = () => {
       }
       state.frameCount++;
 
-      // Smooth interpolation of Frame Index (Lerp)
-      if (state.frameIndex < state.targetFrameIndex) {
-        // Increment slowly for premium buttery feel
+      // Smooth interpolation of Frame Index (Lerp) in both directions
+      if (state.frameIndex !== state.targetFrameIndex) {
         const diff = state.targetFrameIndex - state.frameIndex;
-        const step = Math.max(1, Math.round(diff * 0.1));
-        state.frameIndex = Math.min(state.targetFrameIndex, state.frameIndex + step);
+        const step = diff > 0 
+          ? Math.max(1, Math.round(diff * 0.1)) 
+          : Math.min(-1, Math.round(diff * 0.1));
+        
+        state.frameIndex = diff > 0
+          ? Math.min(state.targetFrameIndex, state.frameIndex + step)
+          : Math.max(state.targetFrameIndex, state.frameIndex + step);
+        
         setFrameIndex(state.frameIndex);
       }
 

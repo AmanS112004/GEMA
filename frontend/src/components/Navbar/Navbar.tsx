@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-background/80 backdrop-blur-md shadow-md py-4'
+          ? 'bg-background/40 backdrop-blur-md shadow-md py-4'
           : 'bg-transparent py-6'
       }`}
       aria-label="Main Navigation"

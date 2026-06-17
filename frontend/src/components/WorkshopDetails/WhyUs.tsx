@@ -81,7 +81,7 @@ export const WhyUs: React.FC = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -6, scale: 1.01 }}
-                className={`bg-white/80 border border-primary/5 p-8 rounded-premium shadow-premium hover:border-primary/20 transition-all duration-300 flex flex-col space-y-4 ${
+                className={`bg-white/30 backdrop-blur-sm border border-primary/5 p-8 rounded-premium shadow-premium hover:border-primary/20 transition-all duration-300 flex flex-col space-y-4 ${
                   isFullWidthOnDesktop ? 'lg:col-span-2' : ''
                 }`}
               >

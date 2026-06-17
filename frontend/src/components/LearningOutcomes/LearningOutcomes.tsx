@@ -132,7 +132,7 @@ export const LearningOutcomes: React.FC = () => {
                 <div className={`w-full md:w-1/2 ${isEven ? 'md:pl-16' : 'md:pr-16'} text-left`}>
                   <motion.div
                     variants={contentVariants}
-                    className="bg-white/80 border border-primary/5 p-6 rounded-premium shadow-premium relative group hover:border-primary/20 transition-all duration-300"
+                    className="bg-white/30 backdrop-blur-sm border border-primary/5 p-6 rounded-premium shadow-premium relative group hover:border-primary/20 transition-all duration-300"
                   >
                     {/* outcome number badge */}
                     <div className="absolute right-6 top-6 text-3xl font-heading font-extrabold text-primary/10 group-hover:text-primary/20 transition-colors">

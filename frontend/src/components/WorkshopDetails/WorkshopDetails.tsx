@@ -80,7 +80,7 @@ export const WorkshopDetails: React.FC = () => {
               key={idx}
               variants={cardVariants}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="bg-background/60 backdrop-blur-sm border border-white/60 p-6 rounded-premium shadow-premium transition-all duration-300 flex flex-col items-start text-left space-y-4 cursor-pointer"
+              className="bg-white/30 backdrop-blur-sm border border-white/60 p-6 rounded-premium shadow-premium transition-all duration-300 flex flex-col items-start text-left space-y-4 cursor-pointer"
             >
               {/* Icon Container */}
               <div className="w-12 h-12 bg-secondary/80 rounded-2xl flex items-center justify-center shadow-inner">

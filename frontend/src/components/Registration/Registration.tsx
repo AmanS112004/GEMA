@@ -74,7 +74,7 @@ export const Registration: React.FC = () => {
 
   return (
     <section id="register" className="py-24 bg-transparent px-6 lg:px-8">
-      <div className="max-w-xl mx-auto bg-white/70 backdrop-blur-md border border-white/60 p-8 sm:p-12 rounded-premium shadow-premium">
+      <div className="max-w-xl mx-auto bg-white/30 backdrop-blur-sm border border-white/60 p-8 sm:p-12 rounded-premium shadow-premium">
         
         {/* Header */}
         <div className="text-center mb-10">
