@@ -1,5 +1,5 @@
 import { Navbar } from './components/Navbar/Navbar';
-import { ThreeBackground } from './components/Background/ThreeBackground';
+import { AnimatedBackground } from './components/Background/AnimatedBackground';
 import { Hero } from './components/Hero/Hero';
 import { WorkshopDetails } from './components/WorkshopDetails/WorkshopDetails';
 import { WhyUs } from './components/WorkshopDetails/WhyUs';
@@ -12,8 +12,8 @@ import { Toaster } from 'react-hot-toast';
 function App() {
   return (
     <div className="relative min-h-screen">
-      {/* Dynamic particles interactive background */}
-      <ThreeBackground />
+      {/* Immersive background scroll animation */}
+      <AnimatedBackground />
       
       {/* Navigation Header */}
       <Navbar />
