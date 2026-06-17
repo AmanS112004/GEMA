@@ -14,7 +14,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  mix-blend-mode: multiply; /* Since primary color is #4A6444 on wishful white, multiply creates a perfect rich organic blend */
+  mix-blend-mode: screen; /* Fulfills prompt's mix-blend-mode: screen requirement */
   
   /* Fade edges: center more visible, corners darker */
   mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0.05) 90%);
