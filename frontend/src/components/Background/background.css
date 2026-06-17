@@ -26,9 +26,6 @@
   /* Animation parameters bound to CSS variables */
   opacity: var(--bg-opacity);
   transform: translateY(var(--bg-translate-y)) scale(var(--bg-scale));
-  
-  /* Smooth transitions */
-  transition: opacity 0.25s ease-out, filter 0.25s ease-out, transform 0.1s ease-out;
 }
 
 /* Fallback gradient styling */
