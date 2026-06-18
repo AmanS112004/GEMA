@@ -122,29 +122,3 @@ npm run preview
 ```
 
 ---
-
-## Deployment Instructions
-
-### 1. Backend Deployment (Render)
-- Sign in to [Render](https://render.com/).
-- Select **New Web Service** and link your repository.
-- Configure settings:
-  - **Root Directory**: `backend`
-  - **Environment**: `Node`
-  - **Build Command**: `npm install && npm run build`
-  - **Start Command**: `npm start`
-- Add **Environment Variables** matching `backend/.env.example`:
-  - `PORT`: `10000` (or leave default)
-  - `MONGODB_URI`: `your_mongodb_connection_string`
-  - `CLIENT_URL`: Your Netlify client site URL.
-
-### 2. Frontend Deployment (Netlify)
-- Sign in to [Netlify](https://www.netlify.com/).
-- Select **Add new site** -> **Import from Git**.
-- Configure settings:
-  - **Root Directory**: `frontend`
-  - **Build Command**: `npm run build`
-  - **Publish Directory**: `frontend/dist`
-- Add **Environment Variables** in Site Settings:
-  - `VITE_API_URL`: Your deployed Render API root endpoint (e.g. `https://roboai-api.onrender.com/api`)
-  - `VITE_SITE_URL`: Your Netlify site URL.
