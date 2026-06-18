@@ -49,7 +49,7 @@ Create a `.env` file in the `backend` folder:
 ```env
 PORT=5000
 CLIENT_URL=http://localhost:5173
-MONGODB_URI=mongodb+srv://asteinwords_db_user:cFw4EU1eZHi45cgK@cluster0.sdba6xu.mongodb.net/workshop
+MONGODB_URI=your_mongodb_connection_string
 ```
 
 ---
@@ -135,7 +135,7 @@ npm run preview
   - **Start Command**: `npm start`
 - Add **Environment Variables** matching `backend/.env.example`:
   - `PORT`: `10000` (or leave default)
-  - `MONGODB_URI`: `mongodb+srv://asteinwords_db_user:cFw4EU1eZHi45cgK@cluster0.sdba6xu.mongodb.net/workshop`
+  - `MONGODB_URI`: `your_mongodb_connection_string`
   - `CLIENT_URL`: Your Netlify client site URL.
 
 ### 2. Frontend Deployment (Netlify)
